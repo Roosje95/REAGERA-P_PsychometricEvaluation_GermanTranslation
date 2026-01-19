@@ -1,5 +1,5 @@
-############r_additional_file_6#############
-## R Script for the analysis of Santi et al. Translation and validation Reagrea scale swiss-german
+############r_additional_file_Rcode#############
+## R Script for the analysis of Santi et al. Translation and validation Reagrea-P scale swiss-german
 ## In case of question contact: sonja.santi@icloud.com 
 
 ## Set-up: if necessary install and always load required R-packages
@@ -20,7 +20,7 @@ library(semPlot)
 library(tidyverse)
 
 ### TO ADAPT ###
-REAGERA_P_raw <- read_excel("H:/Lehre/Supervision/CHG - Sonja/Submission/Additional file 7.xlsx")
+REAGERA_P_raw <- read_excel("H:/Lehre/Supervision/CHG - Sonja/Submission/r_additional_file_Rcode.xlsx")
 
 ##### descriptive statistics #####
 #sex
@@ -434,3 +434,4 @@ alpha(mydata_FA_AQ, check.keys =TRUE)
 #Managing Response
 mydata_FA_MR<- data.frame(REAGERA_P_raw$sw_4, REAGERA_P_raw$sw_5, REAGERA_P_raw$sw_6, REAGERA_P_raw$sw_7, REAGERA_P_raw$sw_8)
 alpha(mydata_FA_MR, check.keys =TRUE)
+
